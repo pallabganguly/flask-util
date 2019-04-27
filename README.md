@@ -1,6 +1,6 @@
 # Road Runner
 ## Under development
-## Simple Utility to run scripts from a web interface ![computervision/tensorflow](https://img.shields.io/badge/computervision-tensorflow-yellow.svg)
+## Simple Utility to run scripts from a web interface ![license/Apache2.0](https://img.shields.io/github/license/pallabganguly/flask-util.svg?style=plastic)
 Source code for Under Graduate Project, on recogntition and classification of static gestures using Convolutional Neural Networks.
 
 ## How to run:
@@ -10,5 +10,3 @@ The python script must be placed in the scriptfolder directory
 * cd flask-util/
 * pip install -r requirements.txt
 * export FLASK_APP=roadrunner.py
-
-
