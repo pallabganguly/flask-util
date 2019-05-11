@@ -1,3 +1,4 @@
 virtenv/
 .vscode/
 roadrunner/__pycache__
+uploads/*

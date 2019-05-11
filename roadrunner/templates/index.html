@@ -1,25 +1,27 @@
-<html>
-    <head>
-        <title>Roadrunner</title>
-    </head>
+{% extends "base.html" %}
     
-    {% block content %}
-    <h1>Enter name of script</h1>
-    <form action="" method="post">
-        <p>
-            {{ form.scriptname.label }}<br>
-            {{ form.scriptname }}
-        </p>
-        <p>
-            {{ form.arguments.label }}<br>
-            {{ form.arguments }}
-        </p>
-        <p>
-            <input type="submit" value="Run Script!">
-        </p>
-        <a href="/open">
-            <input type="button" value="Open XL file!">
-        </a>
-    </form>
-    {% endblock %}
-</html>
+{% block content %}
+<h1>Enter name of script</h1>
+<form action="" method="post" enctype="multipart/form-data">
+    <p>
+        {{ form.scriptname.label }}<br>
+        {{ form.scriptname }}
+    </p>
+    <p>
+        {{ form.arguments.label }}<br>
+        {{ form.arguments }}
+    </p>
+    <p>
+        <label class="btn btn-default btn-file">
+            Browse <input type="file" name="image">
+        </label>
+    </p>
+    <a href="/upload">
+        <input type="button" value="Upload">
+    </a>
+    <p>
+        <input type="submit" value="Run Script!">
+    </p>
+
+</form>
+{% endblock %}
