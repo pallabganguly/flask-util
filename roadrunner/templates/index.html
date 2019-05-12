@@ -1,27 +1,21 @@
 {% extends "base.html" %}
     
 {% block content %}
-<h1>Enter name of script</h1>
-<form action="" method="post" enctype="multipart/form-data">
-    <p>
-        {{ form.scriptname.label }}<br>
-        {{ form.scriptname }}
-    </p>
-    <p>
-        {{ form.arguments.label }}<br>
-        {{ form.arguments }}
-    </p>
-    <p>
-        <label class="btn btn-default btn-file">
-            Browse <input type="file" name="image">
-        </label>
-    </p>
-    <a href="/upload">
-        <input type="button" value="Upload">
-    </a>
-    <p>
-        <input type="submit" value="Run Script!">
-    </p>
-
-</form>
+<div class='container outer'>
+    <div class='row middle'>
+        <div class='text-center col-sm-12 col-md-12 jumbotron'>
+            <h1>Enter name of script</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+            <p>
+                <label class="btn btn-default btn-file">
+                Browse image<br><br><input class='btn btn-primary' type="file" name="image">
+                </label>
+            </p>
+            <p>
+                <button class='btn btn-success' type="submit" formaction="/upload">Upload and run!</button>
+            </p>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
